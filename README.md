@@ -4,9 +4,9 @@ In this project, I will be using a recipe dataset to make inferences and predict
 Requirement of the individual Project:
 
 Reports in the folder report:
-Must use the provided report template. You can download it in BrightSpace -> Content -> Individual_Project -> Report_Template.docx
-Must submit both word and PdF format of the report
+  - Must use the provided report template. You can download it in BrightSpace -> Content -> Individual_Project -> Report_Template.docx
+  - Must submit both word and PdF format of the report
 Folders:
-Graph folder: contain all pics in the report
-Codes folder: contain the Jupyter notebook coding file.
-Dataset folder: contain all datasets files. The name of data file should be consistent with the read data functions in the coding file
+  - Graph folder: contain all pics in the report
+  - Codes folder: contain the Jupyter notebook coding file.
+  - Dataset folder: contain all datasets files. The name of data file should be consistent with the read data functions in the coding file
