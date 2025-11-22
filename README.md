@@ -6,6 +6,7 @@ Requirement of the individual Project:
 Reports in the folder report:
   - Must use the provided report template. You can download it in BrightSpace -> Content -> Individual_Project -> Report_Template.docx
   - Must submit both word and PdF format of the report
+
 Folders:
   - Graph folder: contain all pics in the report
   - Codes folder: contain the Jupyter notebook coding file.
