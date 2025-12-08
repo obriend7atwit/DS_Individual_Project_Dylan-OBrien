@@ -134,32 +134,35 @@ Model coefficients and token tables show that tastes are driven by a relatively 
 - **Taste distribution (combined primary + secondary)**  
   - Plot: bar chart of taste label frequencies.  
   - Notebook: **Cell 7** — “Distribution of taste labels (primary_taste + secondary_taste)”.  
-  - Placeholder (example):  
     ```md
-    <img width="3568" height="1768" alt="figure_1_Distribution_of_Taste_Labels_Primary_Secondary" src="https://github.com/user-attachments/assets/1278671e-7e50-4fe6-bd6b-ef6eac83fb8e" />
     ```
+    <img width="3568" height="1768" alt="figure_1_Distribution_of_Taste_Labels_Primary_Secondary" src="https://github.com/user-attachments/assets/1278671e-7e50-4fe6-bd6b-ef6eac83fb8e" />
 
 - **Taste vs difficulty heatmap**  
   - Plot: heatmap of taste × difficulty, row-normalized (easy → medium → hard).  
   - Notebook: **Cell 11** — taste–difficulty relationship.  
-  - Placeholder:  
     ```md
-    ![Taste vs Difficulty Heatmap](graphs/figure_2_Taste_vs_Difficulty.png)  <!-- Output of Cell 11 -->
     ```
+    <img width="2536" height="1768" alt="figure_5_Taste_Primary_Secondary_vs_Difficulty_Row_wise" src="https://github.com/user-attachments/assets/c44c7cb0-4586-4cc3-9ab0-50bbb9825041" />
+
+
 
 - **Per-taste F1 bar chart**  
   - Plot: bar chart of per-label F1-scores for the multi-label taste model.  
   - Notebook: **Cell 17** — per-taste F1 scores.  
-  - Placeholder:  
     ```md
-    ![Per-Taste F1 Scores](graphs/figure_3_Per_Taste_F1_Scores.png)  <!-- Output of Cell 17 -->
     ```
+    <img width="3568" height="1768" alt="figure_9_Per_Taste_F1_scores_Multi_Label_Taste_Prediction" src="https://github.com/user-attachments/assets/d503f699-9d05-4311-a606-9063055385d6" />
+
+
 
 - **Top ingredients per taste (table)**  
   - Table: top indicative tokens/ingredients per taste (e.g., top 15 per taste).  
   - Notebook: **Cell 18** — top indicative tokens per taste label.  
-  - Placeholder:  
-    > 📋 **Table:** Top 15 tokens per taste (screenshot or exported table from Cell 18).
+    ```md
+    ```
+    <img width="1923" height="288" alt="table1" src="https://github.com/user-attachments/assets/cd20e08e-83dc-4f85-986e-163f52adfef6" />
+
 
 ---
 
@@ -174,47 +177,46 @@ Prep time increases with both **number of ingredients** and **number of steps**.
 
 Correlation analysis highlights `num_steps` and `num_ingredients` as the strongest structural predictors of `est_prep_time_min`.
 
-**Suggested artifacts to embed**
-
 - **Distributions of structural features**  
   - Plot: histograms/boxplots of `num_ingredients` and `num_steps`.  
   - Notebook: **Cell 9** — numeric distributions for ingredients and steps.  
-  - Placeholder:  
     ```md
-    ![Number of Ingredients and Steps](graphs/figure_4_Num_Ingredients_and_Steps.png)  <!-- Output of Cell 9 -->
     ```
+    <img width="3568" height="1468" alt="figure_3_Distribution_of_Number_of_Steps" src="https://github.com/user-attachments/assets/63418ab7-a22c-41d6-a8f6-ed5eb4d963aa" />
+
 
 - **Prep and cook time distributions (raw minutes)**  
   - Plot: histograms/boxplots of `est_prep_time_min` and `est_cook_time_min` (non-log).  
   - Notebook: **Cell 10** — raw prep and cook time distributions.  
-  - Placeholder:  
     ```md
-    ![Prep and Cook Time Distributions](graphs/figure_5_Prep_and_Cook_Time_Distributions.png)  <!-- Output of Cell 10 -->
     ```
+    <img width="4168" height="1468" alt="figure_4_Cook_Time_Distribution_Minutes" src="https://github.com/user-attachments/assets/7eb64a2d-7566-40b4-8f61-7746f96b2e1c" />
+
 
 - **Prep & cook time by difficulty**  
   - Plot: boxplots of prep and cook time split by difficulty.  
   - Notebook: **Cell 12** — prep/cook time by difficulty.  
-  - Placeholder:  
     ```md
-    ![Prep and Cook Time by Difficulty](graphs/figure_6_Prep_and_Cook_Time_by_Difficulty.png)  <!-- Output of Cell 12 -->
     ```
+    <img width="4168" height="1768" alt="figure_6_Cook_Time_by_Difficulty_Clipped_at_99th_Percentile" src="https://github.com/user-attachments/assets/80de5282-c525-4655-91e4-a200ccad7c4f" />
+
 
 - **Structural complexity vs total time**  
   - Plot: scatter plot of total time vs structural features (`num_steps`, `num_ingredients`), colored by difficulty.  
   - Notebook: **Cell 14** — structural complexity vs total time.  
-  - Placeholder:  
     ```md
-    ![Structural Complexity vs Total Time](graphs/figure_7_Structural_Complexity_vs_Total_Time.png)  <!-- Output of Cell 14 -->
     ```
+    <img width="3568" height="2068" alt="figure_8_Difficulty" src="https://github.com/user-attachments/assets/bbfccfa9-64ca-48ea-acd4-ead32d615069" />
+
 
 - **Correlation bar chart**  
-  - Plot: bar chart of absolute Pearson correlations between `num_ingredients`, `num_steps`, `est_cook_time_min` and `est_prep_time_min`.  
-  - Notebook: **Cell 41** — Q2 correlations with prep time.  
+  - Plot: bar chart of absolute Pearson correlations between `num_ingredients`, `num_steps`, and `est_cook_time_min`.  
+  - Notebook: **Cell Q2** — Q2 correlations with prep time.  
   - Placeholder:  
     ```md
-    ![Correlation with Prep Time](graphs/figure_8_Correlation_with_Prep_Time.png)  <!-- Output of Cell 41 -->
     ```
+    <img width="2368" height="1468" alt="figure_21_How_structural_features_relate_to_prep_time_correlation_with_est_prep_time_min" src="https://github.com/user-attachments/assets/479623e7-cd3c-4e88-a79d-ea6d082b0c1c" />
+
 
 ---
 
@@ -229,42 +231,29 @@ Difficulty is driven by **structural complexity** and **instruction text**:
 
 Beginner-friendly recipes are those with short ingredient lists, few steps, short prep time, and high predicted probability of “easy”.
 
-**Suggested artifacts to embed**
-
 - **Difficulty distribution**  
   - Plot: bar chart of difficulty levels (easy / medium / hard).  
   - Notebook: **Cell 8** — difficulty distribution.  
-  - Placeholder:  
     ```md
-    ![Distribution of Difficulty Levels](graphs/figure_9_Distribution_of_Difficulty_Levels.png)  <!-- Output of Cell 8 -->
     ```
+    <img width="2368" height="1768" alt="figure_2_Distribution_of_Recipe_Difficulty" src="https://github.com/user-attachments/assets/b0e934c2-d459-4d0c-a42b-8aa996855ab0" />
 
-- **Prep & cook time by difficulty**  
-  - Already referenced in Q2 (Cell 12); may be re-used here for context.
-
-- **Text-only difficulty confusion matrix**  
-  - Plot: normalized confusion matrix heatmap for the text-only difficulty model.  
-  - Notebook: **Cell 21** — confusion matrix (text-only model).  
-  - Placeholder:  
-    ```md
-    ![Difficulty Confusion Matrix (Text-Only)](graphs/figure_10_Difficulty_CM_Text_Only.png)  <!-- Output of Cell 21 -->
-    ```
 
 - **Text vs text+structural comparison**  
   - Plot: side-by-side confusion matrices for text-only (red) vs text+structural (green) difficulty models.  
   - Notebook: **Cell 26** — comparison of difficulty models.  
-  - Placeholder:  
     ```md
-    ![Difficulty Models: Text vs Text+Structural](graphs/figure_11_Difficulty_Models_Comparison.png)  <!-- Output of Cell 26 -->
     ```
+    <img width="4126" height="1468" alt="figure_12_Text_Structural_Model_Row_wise" src="https://github.com/user-attachments/assets/a81f0a4a-dfb5-40e4-a971-3679dcc5aa45" />
+
 
 - **Numeric feature importance for structural features**  
   - Plot: bar chart of coefficients/importances for numeric features (e.g., `num_steps`, `num_ingredients`, times).  
   - Notebook: **Cell 25** — numeric feature coefficients for difficulty.  
-  - Placeholder:  
     ```md
-    ![Structural Feature Importance for Difficulty](graphs/figure_12_Difficulty_Structural_Features.png)  <!-- Output of Cell 25 -->
     ```
+    <img width="2968" height="1767" alt="figure_11_Difficulty" src="https://github.com/user-attachments/assets/98e9987f-bfbe-497c-bc09-c5befd70cd3e" />
+
 
 ---
 
@@ -277,25 +266,24 @@ Cuisine is partly predictable from ingredients and instructions:
 - Confusions often follow culinary similarity (e.g., Mediterranean vs Middle Eastern vs British when many dishes share overlapping ingredients).  
 - Restricting to the **top 5 cuisines** by frequency produces a cleaner confusion matrix and highlights which cuisines are most distinct in the dataset.
 
-**Suggested artifacts to embed**
 
 - **Top cuisines by recipe count**  
   - Plot: bar chart of the most frequent cuisines.  
   - Notebook: **Cell 13** — top cuisines by recipe count.  
-  - Placeholder:  
     ```md
-    ![Top Cuisines by Recipe Count](graphs/figure_13_Top_Cuisines.png)  <!-- Output of Cell 13 -->
     ```
+    <img width="3568" height="1769" alt="figure_13_Top_TOP_N_ING_Cleaned_Canonical_Ingredients_by_Recipe_Count_Final" src="https://github.com/user-attachments/assets/714215f3-3502-42b5-b046-eb1f1a2ccdc4" />
+
 
 - **Cuisine prediction confusion matrix (top-5)**  
   - Plot: confusion matrix focused on the top-5 cuisines.  
-  - Notebook: **Cell 44** — Q4 cuisine prediction confusion matrix.  
+  - Notebook: **Cell Q4** — Q4 cuisine prediction confusion matrix.  
   - Placeholder:  
     ```md
-    ![Cuisine Prediction Confusion Matrix (Top-5)](graphs/figure_14_Cuisine_CM_Top5.png)  <!-- Output of Cell 44 -->
     ```
+    <img width="2268" height="2051" alt="figure_22_Cuisine_Prediction_Confusion_Matrix" src="https://github.com/user-attachments/assets/53e9f446-2e08-4d2f-b098-7602c6593670" />
 
-You may also include an earlier “all-cuisines” confusion matrix for comparison if you saved it.
+
 
 ---
 
@@ -321,47 +309,40 @@ The pantry recommender ranks recipes using ingredient similarity and learned rec
 
 A static example pantry is used in the notebook to illustrate the ranking pipeline, and an interactive GUI (ipywidgets) allows arbitrary user input and filters.
 
-**Suggested artifacts to embed (non-GUI)**
 
 - **Coverage & overlap bar chart (example pantry)**  
   - Plot: bar chart where each bar or group shows coverage (%) and overlap count per recommended recipe.  
   - Notebook: **Cell 30b** — coverage & overlap bar chart.  
-  - Placeholder:  
     ```md
-    ![Coverage & Overlap for Example Pantry](graphs/figure_15_Coverage_Overlap_Example_Pantry.png)  <!-- Output of Cell 30b -->
     ```
+    <img width="3530" height="2066" alt="figure_14_Pantry_Based_Recommendations_Coverage_Overlap" src="https://github.com/user-attachments/assets/3322a087-383f-4622-b7fd-f9d3a55e6f05" />
+
 
 - **Ingredient-space neighborhood (PCA)**  
   - Plot: 2-D PCA showing user pantry (star) and recommended recipes (points) in ingredient space, colored by coverage.  
   - Notebook: **Cell 30c** — ingredient-space neighborhood.  
-  - Placeholder:  
     ```md
-    ![Ingredient-Space Neighborhood (PCA)](graphs/figure_16_Ingredient_Space_PCA.png)  <!-- Output of Cell 30c -->
     ```
+    <img width="2560" height="2068" alt="figure_15_Ingredient_Space_Neighborhood_of_User_Pantry" src="https://github.com/user-attachments/assets/7a45626a-5c00-4c82-be2c-f88046e6ca11" />
+
 
 - **Summary charts – predicted difficulty & top tastes**  
   - Plots:  
     - Bar chart of recommended recipes by difficulty.  
     - Bar chart/stacked chart of dominant tastes among recommendations.  
   - Notebook: **Cell 30d** — summary charts for difficulty and tastes.  
-  - Placeholder:  
     ```md
-    ![Recommended Recipes by Difficulty](graphs/figure_17_Recs_By_Difficulty.png)  <!-- Output of Cell 30d -->
-    ![Top Predicted Tastes in Recommendations](graphs/figure_18_Recs_Taste_Profile.png)  <!-- Output of Cell 30d -->
     ```
+    <img width="4168" height="1468" alt="figure_16_Top_Predicted_Tastes_top_recommendations" src="https://github.com/user-attachments/assets/b87e6f17-bc40-4352-a4f3-52003909a41e" />
 
-You can then reference the **interactive GUI** (Cells 33a–33b) with one or two screenshots, for example:
 
-> 🖼️ **Optional GUI screenshots**  
-> - Overall GUI layout (pantry input, filters, “Recommend recipes” button).  
+
+> **GUI screenshots**  
+> - Overall GUI layout (pantry input, filters, “Recommend recipes” button).
+<img width="1547" height="1072" alt="GUI" src="https://github.com/user-attachments/assets/c65b1180-3f71-4d43-ac06-35cf4da6f38a" />
+
 > - Recipe details view (description, ingredients, directions) for one recommendation.
-
-These GUI figures don’t need to be auto-saved; simple screenshots from a running notebook are fine.
+<img width="1547" height="1072" alt="GUI" src="https://github.com/user-attachments/assets/962ace0f-542a-4206-a42f-31437c68d14b" />
 
 ---
 
-## 7. Final Notes
-
-- Make sure the `graphs/` directory contains the figures you reference in this README, and adjust filenames if your saving scheme differs.  
-- Keep the README consistent with the final written report (`report/`), which should follow the course’s Word template and IMRAD structure.  
-- For a portfolio or personal site, you can create a shorter summary “project card” linking back to this repo and the full report.
