@@ -131,14 +131,12 @@ Taste is strongly encoded in ingredients. Multi-label models using TF–IDF feat
 
 Model coefficients and token tables show that tastes are driven by a relatively small set of strongly identifying ingredients.
 
-**Suggested artifacts to embed**
-
 - **Taste distribution (combined primary + secondary)**  
   - Plot: bar chart of taste label frequencies.  
   - Notebook: **Cell 7** — “Distribution of taste labels (primary_taste + secondary_taste)”.  
   - Placeholder (example):  
     ```md
-    ![Distribution of Taste Labels](graphs/figure_1_Distribution_of_Taste_Labels.png)  <!-- Output of Cell 7 -->
+    <img width="3568" height="1768" alt="figure_1_Distribution_of_Taste_Labels_Primary_Secondary" src="https://github.com/user-attachments/assets/1278671e-7e50-4fe6-bd6b-ef6eac83fb8e" />
     ```
 
 - **Taste vs difficulty heatmap**  
