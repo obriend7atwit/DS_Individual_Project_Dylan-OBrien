@@ -33,7 +33,7 @@ The raw CSV (e.g., `recipes_extended.csv`) is stored under `data/` in the repo (
 
 ---
 
-## 3. Methods in a Nutshell
+## 3. Methods
 
 High-level methods (explained in more detail in the written report and notebook):
 
@@ -59,7 +59,7 @@ High-level methods (explained in more detail in the written report and notebook)
 
 ---
 
-## 4. Repository Structure (Suggested)
+## 4. Repository Structure
 
 A suggested layout for the GitHub repository:
 
@@ -78,8 +78,6 @@ A suggested layout for the GitHub repository:
     ├── Dylan_OBrien_Individual_Project_Report.docx
     └── Dylan_OBrien_Individual_Project_Report.pdf
 ```
-
-You can adapt this to match your actual filenames and directory structure.
 
 ---
 
@@ -117,14 +115,7 @@ Most figures are also saved automatically to `graphs/` (e.g., `figure_#_<Title>.
 
 ## 6. Research Questions & Supporting Figures
 
-The following section is designed to live **after** the standard README information and acts as a narrative summary of the five core questions. For each question:
-
-- A short analytical answer is provided.  
-- Suggested plots/tables/screenshots are indicated with references to notebook cell numbers.  
-- You can replace each placeholder with an actual Markdown image once the graphs are committed.
-
-> Tip: Once your figures are generated into `graphs/`, you can embed them as:  
-> `![Caption](graphs/figure_X_Title_Slug.png)`
+The following section is designed to act as a narrative summary of the five core questions.
 
 ---
 
