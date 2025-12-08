@@ -306,7 +306,8 @@ A static example pantry is used in the notebook to illustrate the ranking pipeli
 <img width="1547" height="1072" alt="GUI" src="https://github.com/user-attachments/assets/c65b1180-3f71-4d43-ac06-35cf4da6f38a" />
 
 - Recipe details view (description, ingredients, directions) for one recommendation.
-<img width="1547" height="1072" alt="GUI" src="https://github.com/user-attachments/assets/962ace0f-542a-4206-a42f-31437c68d14b" />
+<img width="1417" height="542" alt="GUI2" src="https://github.com/user-attachments/assets/f8b9311a-ee0a-4d8f-af2f-a24258d025f8" />
+
 
 ---
 
