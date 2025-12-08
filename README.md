@@ -11,3 +11,4 @@ Folders:
   - Graph folder: contain all pics in the report
   - Codes folder: contain the Jupyter notebook coding file.
   - Dataset folder: contain all datasets files. The name of data file should be consistent with the read data functions in the coding file
+<img width="3568" height="1768" alt="figure_1_Distribution_of_Taste_Labels_Primary_Secondary" src="https://github.com/user-attachments/assets/f08ec73b-39bc-4a65-b65d-66d3192b87e0" />
