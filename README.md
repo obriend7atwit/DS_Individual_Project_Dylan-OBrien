@@ -30,6 +30,7 @@ The analysis uses the **Extended Recipes Dataset: 64K Dishes** (Kaggle), which a
 - Dietary & health: dietary flags (e.g., `is_vegan`, `is_gluten_free`), `dietary_profile`, `healthiness_score`, `health_flags`, `health_level`.
 
 The raw CSV (e.g., `recipes_extended.csv`) is stored under `data/` in the repo (either the full dataset or a filtered/cleaned subset, depending on size constraints).
+
 This is the link to the Kaggle dataset: https://www.kaggle.com/datasets/wafaaelhusseini/extended-recipes-dataset-64k-dishes/data
 
 ---
