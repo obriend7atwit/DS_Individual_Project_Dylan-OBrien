@@ -63,13 +63,13 @@ High-level methods (explained in more detail in the written report and notebook)
 
 ## 4. Repository Structure
 
-A suggested layout for the GitHub repository:
+Layout for the GitHub repository:
 
 ```text
 .
 ├── README.md                           # This file
 ├── data/
-│   └── recipes_extended.csv            # Or a cleaned / sampled version
+│   └── recipes_extended.csv            # Main dataset
 ├── codes/
 │   └── IndividualProject.ipynb         # Main Jupyter notebook
 ├── graphs/
